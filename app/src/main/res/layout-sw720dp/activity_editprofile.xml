@@ -1,0 +1,327 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color">
+
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dip"
+            android:text="Edit Account"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edtAgentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transferent"
+                android:hint="Agent's Name"
+                android:textCursorDrawable="@android:color/white"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" >
+                <requestFocus></requestFocus>
+            </EditText>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+
+            <EditText
+                android:id="@+id/edtCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="Company"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@android:color/white"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+
+
+
+
+
+                <Spinner
+                    android:id="@+id/edtShopperGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    style="@style/spinner_style"
+                    android:background="@drawable/shape_drop_down_normal"
+                    android:popupBackground="#ffffff"
+                    android:imeOptions="actionNext"
+                  />
+
+
+
+
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtOfficeBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="Office Branch"
+                android:textCursorDrawable="@android:color/white"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtMailingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="Mailing Address"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@android:color/white"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtMailingZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="Mailing Zip"
+                android:inputType="number"
+                android:textCursorDrawable="@android:color/white"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="City"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@android:color/white"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                style="@style/spinner_style"
+                android:background="@drawable/shape_drop_down_normal"
+                android:popupBackground="#ffffff"
+                android:imeOptions="actionNext"
+                />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtCellPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="CellPhone"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@android:color/white"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtSecondaryEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="Secondary Email"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@android:color/white"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transferent"
+                android:hint="Website"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@android:color/white"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/llUploadPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.15"
+                    android:background="@color/transferent"
+                    android:hint="Upload Profile Picture"
+                    android:imeOptions="actionDone"
+                    android:padding="20dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_camera" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/btn_base_img"
+                android:text="EDIT ACCOUNT"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
